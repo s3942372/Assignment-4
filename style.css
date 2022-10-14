@@ -1,0 +1,290 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #000000;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('img/computer.webp');
+    min-height: 800px;
+}
+
+.pimg2 {
+    background-image: url('img/camera.jpg');
+    min-height: 800px;
+}
+
+.pimg3 {
+    background-image: url('img/code.jpg');
+    min-height: 800px;
+}
+
+.pimg4 {
+    background-image: url('img/game.jpg');
+    min-height: 800px;
+}
+
+.pimg5 {
+    background-image: url('img/Bio.jpg');
+    min-height: 800px;
+}
+
+.pimg6 {
+  background-image: url('img/mouse.jpg');
+  min-height: 800px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f1f1f1;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.section-grey {
+  background-color: #3e383d;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width: 500px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4,
+    .pimg5,
+    .pimg6 {
+        background-attachment: scroll;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  .navbar {
+    width: 100%;
+    background-color: #232323;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #868686;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    color: #737373;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /*The first polaroid*/
+  .row_1 {
+    margin: 8px -16px;
+    float: center;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* Content */
+  .content_1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    color: #737373;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column_1 {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column_1 {
+      width: 100%;
+    }
+  }
+
+  .videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.row_3 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+  .row_3,
+  .row_3 > .column_3,
+  .row_3 > .column_4 {
+    padding: 20px;
+  }
+
+  .column_3 {
+    float: left;
+    width: 25%;
+  }
+
+  .column_4 {
+    float: right;
+    width: 25%;
+  }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+        .column_3 {
+          width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column_3 {
+          width: 100%;
+        }
+      }
+
+      .section-dark {
+        height:fit-content;
+        background: linear-gradient(180deg, #bc4c1f 0%, #9a2121 51%, #571798 85%);
+      }
